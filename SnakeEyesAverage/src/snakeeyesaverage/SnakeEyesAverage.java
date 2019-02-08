@@ -16,9 +16,6 @@ public class SnakeEyesAverage {
      */
     public static void main(String[] args) {
 
-        System.out.println("Hello World");
-        System.out.println("Hello world!");
-
         int attemptCounter = 0;
         float runningSum = 0;        
         float snakeeyesCounter = 1;
@@ -26,7 +23,7 @@ public class SnakeEyesAverage {
         int die2 = 0;
         
         
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 10; i++) {
             do {
                 die1 = (int) (Math.random() * 6) + 1;
                 die2 = (int) (Math.random() * 6) + 1;
@@ -36,8 +33,8 @@ public class SnakeEyesAverage {
 
             if (die1 == 1 && die2 == 1) {
                 float runningAvg = (runningSum / snakeeyesCounter);
-                System.out.println("It took " + attemptCounter + " tries.");
-                System.out.println("You average Snake Eyes every " + runningAvg + " dice rolls");                
+                TextIO.putln("It took " + attemptCounter + " tries.");
+                TextIO.putln("You average Snake Eyes every " + runningAvg + " dice rolls");                
                 attemptCounter = 0;
                 snakeeyesCounter++;
 
