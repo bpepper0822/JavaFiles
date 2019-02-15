@@ -17,9 +17,9 @@ public class IceCream {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int strawberryCounter = 0;
-        int totalCounter = 0;
-        String flavor;
+        int strawberryCounter = 0;  // count of strawberry sold
+        int totalCounter = 0;       // total sales counter
+        String flavor;              // temporary variable to hold each line we read
 
         TextIO.putln("test");
         TextIO.readFile("src/icecream/icecream.dat");
