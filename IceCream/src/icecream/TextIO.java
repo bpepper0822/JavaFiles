@@ -1,4 +1,4 @@
-
+package icecream;
 
 import java.io.*;
 import java.util.IllegalFormatException;
