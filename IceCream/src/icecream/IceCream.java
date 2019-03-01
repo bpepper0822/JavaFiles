@@ -1,42 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package icecream;
 
-import icecream.TextIO;
-
 /**
- *
  * @author Studio
  */
+
 public class IceCream {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         int strawberryCounter = 0;  // count of strawberry sold
         int totalCounter = 0;       // total sales counter
         String flavor;              // temporary variable to hold each line we read
-
-        TextIO.putln("test");
-        TextIO.readFile("src/icecream/icecream.dat");
+        
+        TextIO.readFile("src/icecream/icecream.dat");   //opens file
+        
         while ( TextIO.eof() == false) {
             flavor = TextIO.getln();
             totalCounter++;
-            if (flavor == "Strawberry"){
+            if (flavor.equals("Strawberry")){
                 strawberryCounter++;
             }    
         }
-
-        double percentage = 100 * (strawberryCounter/totalCounter);
-
-        TextIO.putln("There were " + totalCounter + " ice cream cones sold, " + strawberryCounter + " of which were Strawberry.");
-
-        TextIO.putln("Therefore " + percentage + " percent of ice cream cones sold were Strawberry.");
+        float percentage = ((float)strawberryCounter / totalCounter) * 100 ;    // the actual calculation of percentage
+        String percentageFormatted = String.format("%.2f", percentage);         // formatting to 2 decimal place     
         
-    }
-    
+        //at end of file...
+        if ( TextIO.eof() == true ) {   
+            TextIO.putln("There were " + totalCounter + " ice cream cones sold, " + strawberryCounter + " of which were strawberry.");
+            TextIO.putln("Therefore, " + percentageFormatted + " percent of ice cream cones sold were strawberry.");
+        }
+    }    
 }

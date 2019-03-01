@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="942f8f36-2942-44a8-ae98-01a8e58925de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceCream/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCream/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceCream/src/icecream/IceCream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCream/src/icecream/IceCream.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,16 +80,17 @@
       <workItem from="1549321775874" duration="67000" />
       <workItem from="1549596862130" duration="118000" />
       <workItem from="1549740599033" duration="190000" />
+      <workItem from="1550341967837" duration="226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405000" />
+    <option name="totallyTimeSpent" value="631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="260" y="20" width="1400" height="1000" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26492536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
